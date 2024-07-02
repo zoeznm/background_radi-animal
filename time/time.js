@@ -4,20 +4,6 @@ const dotCount = 3000;
 const size = 4;
 const f = 3;
 const dots = [];
-const v = 128; 
-const l = 127; 
-const rot = 80;
-let w = 0;
-let h = 0;
-let cX = 0;
-let cY = 0;
-let mD = 0;
-let mouseDown = false;
-
-let nX = 0;
-let nY = 0;
-let sX = 0;
-let sY = 0;
 
 function resize() {
   w = canvas.width = window.innerWidth;
@@ -41,10 +27,6 @@ function resize() {
 }
 
 window.addEventListener('resize', resize);
-window.addEventListener('mousedown', () => { mouseDown = true });
-document.addEventListener('touchstart', () => { mouseDown = true });
-window.addEventListener('mouseup', () => { mouseDown = false });
-document.addEventListener('touchend', () => { mouseDown = false });
 resize();
 
 function draw(time = 0) {

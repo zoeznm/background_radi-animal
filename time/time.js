@@ -34,7 +34,7 @@ function draw(time = 0) {
 
   for (let i = 0; i < dotCount; i++) {
     const d = dots[i];
-    const t = (d.t + time) * 0.005;
+    const t = (d.t + time) * 0.004;
     const a = Math.sin(t);
     
     if (Math.abs(d.x - d.oX) > f || Math.abs(d.y - d.oY) > f) {
